@@ -1,0 +1,24 @@
+<div class="container">
+    <div id="main">
+        <h1>Welcome to Mancala Multiplayer!</h1>
+        <label for="players-select">Players: </label>
+
+        <select name="players" id="players-select">
+            <option value="" (click)="this.numOfPlayers=null">--Please choose an option--</option>
+            <option value="1" (click)="updateGameState($event)">One player</option>
+            <option value="2" (click)="updateGameState($event)">Two players</option>
+        </select>
+    </div>
+    <button type="button" class="btn" disabled
+    *ngIf="!this.numOfPlayers"
+    >
+    Start
+    </button>
+
+    <button type="button" class="btn"
+    *ngIf="this.numOfPlayers"
+    (click)="startGame()"
+    >
+    Start
+    </button>
+</div>

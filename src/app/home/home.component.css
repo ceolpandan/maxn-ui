@@ -1,0 +1,20 @@
+.container{
+    text-align: center;
+    color: rgb(152, 252, 133);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 200px;
+    background-color: #72472b;
+}
+
+select{
+    margin: 15px;
+}
+
+label{
+    color: white;
+}
