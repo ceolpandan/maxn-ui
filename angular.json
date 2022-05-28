@@ -71,7 +71,8 @@
               "browserTarget": "maxmax:build:production"
             },
             "development": {
-              "browserTarget": "maxmax:build:development"
+              "browserTarget": "maxmax:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

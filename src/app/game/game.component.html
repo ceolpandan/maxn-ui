@@ -1,1 +1,9 @@
-<p>game works!</p>
+<div id="move">
+    <p>{{text}}</p>
+    <div *ngIf="this.boardInfo.playerID === 'S'">    
+        <button *ngFor="let move of moves" style="display: inline-block;" (click)="makeMove(this.move)">{{move}}</button>
+    </div>
+    <button (click)="getMaxnMove()" *ngIf="this.boardInfo.playerID !== 'S'">OK</button>
+</div>
+
+<div id="scene"></div>
